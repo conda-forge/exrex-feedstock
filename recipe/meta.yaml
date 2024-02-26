@@ -1,5 +1,5 @@
 {% set name = "exrex" %}
-{% set version = "0.10.5" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3fb8b18fd9832eaff8b13dc042a4f63b13c5d684ee069f70a23ddfc6bcb708f3
+  sha256: 59912f0234567a5966b10d963c37ca9fe07f1640fd158e77c0dc7c3aee780489
 
 build:
   noarch: python
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >3.7
     - pip
   run:
-    - python
+    - python >3.7
 
 test:
   imports:
@@ -27,7 +27,7 @@ test:
 
 about:
   home: https://exrex.readthedocs.io/
-  license: AGPL v3.0
+  license: AGPL-3.0-or-later
   license_family: GPL
   license_file: COPYING
   summary: 'Irregular methods on regular expressions'
@@ -47,3 +47,4 @@ about:
 extra:
   recipe-maintainers:
     - scopatz
+    - jan-janssen
