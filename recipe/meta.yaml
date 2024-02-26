@@ -27,7 +27,7 @@ test:
 
 about:
   home: https://exrex.readthedocs.io/
-  license: AGPL v3.0
+  license: AGPL-3.0-or-later
   license_family: GPL
   license_file: COPYING
   summary: 'Irregular methods on regular expressions'
