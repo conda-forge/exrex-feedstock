@@ -1,13 +1,13 @@
 {% set name = "exrex" %}
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 59912f0234567a5966b10d963c37ca9fe07f1640fd158e77c0dc7c3aee780489
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 3f582add0700d4141e279625252e7a0655f9ad81feab3b8ab9077966668a2c99
 
 build:
   noarch: python
@@ -18,6 +18,7 @@ requirements:
   host:
     - python >3.7
     - pip
+    - setuptools
   run:
     - python >3.7
 

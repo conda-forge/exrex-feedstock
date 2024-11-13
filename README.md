@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/exrex-feedstock
 
 Home: https://exrex.readthedocs.io/
 
-Package license: AGPL v3.0
+Package license: AGPL-3.0-or-later
 
 Summary: Irregular methods on regular expressions
 
